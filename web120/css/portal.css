@@ -1,0 +1,150 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    font-family: Helvetica, sans-serif;
+    color: gray;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+h1 {
+    font-weight: 800;
+    margin: auto;
+    background: #fff;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    color: #6a5acd;
+}
+
+main.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2,h3 {
+    font-weight: 800;
+    margin-left: 1em;
+    line-height: 1em;
+    color: #6a5acd;
+
+}
+
+a {
+    color:darkcyan;
+    text-decoration: none;
+    color: #6a5acd;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #6a5acd;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*Flowchart Google Doc*/
+
+.embed-container {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%; 
+
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    img.desktop {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+    img.tablet,img.phone {
+        display: none;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    img.tablet {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.desktop, img.phone {
+        display: none; 
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    img.phone {
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+}
