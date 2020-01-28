@@ -11,7 +11,7 @@ html {
 
 ::selection {
     color: #000; 
-    background: #ff0;
+    background: #add8e6;
 }
 
 h1 {
@@ -51,6 +51,26 @@ a:hover {
     background-color: #6a5acd;
     text-decoration: none;
 }
+
+a:active {
+    background-color: lavender;
+}
+
+/* Change background color of navigation on selected page */
+.topnav a.active {
+    background-color: lavender;
+    color:#ED3d63;
+   }
+
+
+/* font awesome icon styles */
+i.logo {
+    color: #6a5acd; /* a less boring color */
+    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
 
 footer {
     clear: both;
