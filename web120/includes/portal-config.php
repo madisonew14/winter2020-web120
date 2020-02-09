@@ -92,9 +92,9 @@ function makeLinks($linkArray)
     {
         if($url == THIS_PAGE)
         {//selected page - add class reference
-	    	$myReturn .= '<a class="active" href="' . $url . '">' . $text . '</a></li>' . PHP_EOL;
+	    	$myReturn .= '<a class="active" href="' . $url . '">' . $text . '</a>' . PHP_EOL;
     	}else{
-	    	$myReturn .= '<a href="' . $url . '">' . $text . '</a></li>'  . PHP_EOL;
+	    	$myReturn .= '<a href="' . $url . '">' . $text . '</a>'  . PHP_EOL;
     	}    
     }
       
