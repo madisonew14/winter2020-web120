@@ -1,7 +1,7 @@
 <? include 'includes/header.php';?>
-
-<!-- 3 images HERE -->
-     Page reserved for final project
+<p>hello, world!</p>
+     
+   <main class="wrapper">
        
-<!-- PHP calling for footer -->
+<!-- header includes HERE -->
 <?php include 'includes/footer.php';?>
