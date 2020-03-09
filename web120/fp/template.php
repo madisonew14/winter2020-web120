@@ -1,6 +1,6 @@
-<?php include 'header.php'?>
+<?php include 'includes/header.php'?>
 <div id="content">
-    <img src="pearl_home.jpg" id="homepageimg" alt= "seattle_skyline"/>
+    <img src="images/pearl_home.jpg" id="homepageimg" alt= "seattle_skyline"/>
 
     <h2><?=$h2?></h2>
     <p id="home">"This is one corner… of one country, in one continent,
@@ -8,4 +8,4 @@
         and creating and destroying and never remaining the same for a single millisecond. And there is so much, so much to see."</p>
     <p id="quoteauthor">&ndash;The Doctor, Doctor Who</p>
 </div>
-<?php include 'footer.php'?>
+<?php include 'includes/footer.php'?>
