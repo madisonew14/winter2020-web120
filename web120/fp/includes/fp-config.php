@@ -1,113 +1,88 @@
 <?php
+//this helps us avoid PHP date errors:
+date_default_timezone_set('America/Los_Angeles');
 
 /*
 portal-config.php
 Used to store all of our WEB120 configuration information
 */
 
-//prevents data from being sent early
-ob_start();
-
-//this helps us avoid PHP date errors:
-date_default_timezone_set('America/Los_Angeles');
-
 //echo basename($_SERVER['PHP_SELF']);
 
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
-switch(THIS_PAGE){
+//echo THIS_PAGE;
 
-    case 'index.php':
-        $title = "Madison's WEB120 Title Page";
-        $logo = 'fa-home';
-        $PageID = 'Welcome';
-    break;
+//die;
+
+$logo_color = ''; //make logo_color an empty string by default
+
+
+switch(THIS_PAGE){
+        
     
-    case 'aia.php':
-        $title = "Madison's AIA Research";
-        $logo = 'fas fa-search';
-        $PageID = 'AIA';
-    break;   
-        
-    case 'flowchart.php':
-        $title = "Madison's Flowchart";
-        $logo = 'fas fa-sitemap';
-        $PageID = 'Flowchart';
-    break;
-        
+
     case 'template.php':
-        $title = "Madison's Final Project";
-        $logo = 'fas fa-sitemap';
-        $PageID = 'Final Project';
-    break;   
+        $title = "Pearlable";
+        $h2 = "Pearlable";
         
-    case 'contact.php':
-        $title = "Madison's WEB120 Contact Page";
-        $logo = 'fa-pencil-square-o';
-        $PageID = 'Contact Madison';
+    break;
+    
+    case 'about.php':
+        $title = "About";
+        $h2 = "About Pearl";
+
     break;
 
-    default:
-        $title = THIS_PAGE;
-        $logo = 'fa-home';
-        $PageID = 'Welcome';
-   }
+    
+    case 'artwork.php':
+        $title = "Artwork";
+        $h2 = "Artwork";
 
-//place URL & labels in the array here for navigation:
-$nav1['index.php'] = "Welcome";
-$nav1['big/index.php'] = "Big";
-$nav1['aia.php'] = "AIA";
-$nav1['flowchart.php'] = "Flowchart";
-$nav1['fp/template.php'] = "Final Project";
-$nav1['contact.php'] = "Contact Madison";
+    break;
+    
+    case 'concept.php':
+        $title = "Concept";
+        $h2 = "Concept";
 
-switch(THIS_PAGE){
+    break;
+    
+    case 'mind_palace.php':
+        $title = "Mind Palace";
+        $h2 = "Mind Palace";
 
-    case 'index.php':
-        $title = "Madison's WEB120 Portal Page";
     break;
         
-     case 'aia.php':
-        $title = "Madison's AIA Research";
+     case 'courage.php':
+        $title = "Courage";
+        $h2 = "Courage";
+
     break;
     
-    case 'flowchart.php':
-        $title = "Madison's Flowchart";
+     case 'dreamy_rain.php':
+        $title = "Dreamy Rain";
+        $h2 = "Dreamy Rain";
+
     break;
     
-    case 'fp/template.php':
-        $title = "Madison's Final Project";
+    case 'time.php':
+        $title = "Time and Relative Dimension";
+        $h2 = "Time and Relative Dimension";
+
     break;
     
     case 'contact.php':
-        $title = "Madison's Contact Page";
-    break;
+        $title = "Contact page";
+        $h2 = "Contact";
+    
 
-    default:
-        $title = THIS_PAGE;
+    default:    
+    $title = THIS_PAGE;    
+    
 }
 
-/*
-makeLinks function will create our dynamic nav when called.
-Call like this:
-echo makeLinks($nav1); #in which $nav1 is an associative array of links
-*/
-function makeLinks($linkArray)
-{
-    $myReturn = '';
 
-    foreach($linkArray as $url => $text)
-    {
-        if($url == THIS_PAGE)
-        {//selected page - add class reference
-	    	$myReturn .= '<a class="active" href="' . $url . '">' . $text . '</a>' . PHP_EOL;
-    	}else{
-	    	$myReturn .= '<a href="' . $url . '">' . $text . '</a>'  . PHP_EOL;
-    	}    
-    }
-      
-    return $myReturn;    
-}
+
 
 
 ?>
