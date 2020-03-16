@@ -75,6 +75,7 @@ switch(THIS_PAGE){
         $title = "Contact page";
         $h2 = "Contact";
     
+    break;
 
     default:    
     $title = THIS_PAGE;    
