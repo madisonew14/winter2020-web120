@@ -1,0 +1,42 @@
+/* start reCAPTCHA styles */
+		
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+        input:required {
+              border: 1px solid grey;
+        }
+
+         input:optional, textarea:optional {
+             background-color:#f1f1f1;
+             border:1px solid #ccc;
+             width: 200px;
+        }
+
+        input[type="submit"], input[type="button"] {
+          color: white;
+          background-color: #C780C8;
+          border-radius: 4px;
+          padding: 0.3em 0.5em;
+          width: 200px;
+          text-transform: uppercase;
+        }
+
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 400px;
+        }
+
+        legend {
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+
+        
+/* end reCAPTCHA styles */
