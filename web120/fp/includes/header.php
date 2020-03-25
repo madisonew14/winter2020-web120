@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex,nofollow" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="css/forms.css" />
 <link rel="stylesheet" href="css/fp.css" />
     
 <!-- HAMBURGER MENU ICON -->
@@ -19,14 +19,14 @@
 <nav id="desktopnav">
   <a href="template.php">Home</a>
   <a href="about.php">About Pearlable</a>
-  <a href="http://madwoo3.dreamhosters.com/web120/fp/template.php"><img src="images/logo.png" id="logo" alt="Pearl's logo" width="402" height="211"></a>
+  <a href="http://madwoo3.dreamhosters.com/web120/fp/template.php"><img src="images/logo.png" class="logo" alt="Pearl's logo" width="402" height="211"></a>
   <a href="artwork.php">Artwork</a>
   <a href="contact.php">Contact</a>
 </nav>
 
 <!-- MOBILE NAV -->
 <div class="topnav" id="myTopnav">
-  <a href="http://madwoo3.dreamhosters.com/web120/fp/template.php"><img src="images/logo.png" id="logo" alt="Pearl's logo" width="402" height="211" class="active"></a>
+  <a href="http://madwoo3.dreamhosters.com/web120/fp/template.php"><img src="images/logo.png" class="logo" alt="Pearl's logo" width="402" height="211"></a>
   <a href="template.php">Home</a>
   <a href="about.php">About Pearlable</a>
   <a href="artwork.php">Artwork</a>
