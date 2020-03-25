@@ -34,7 +34,6 @@ switch(THIS_PAGE){
 
     break;
 
-    
     case 'artwork.php':
         $title = "Artwork";
         $h2 = "Artwork";
@@ -72,10 +71,11 @@ switch(THIS_PAGE){
     break;
     
     case 'contact.php':
-        $title = "Contact page";
-        $h2 = "Contact";
+        $title = "Contact Pearl";
+        $h2 = "Let's Chat!";
     
     break;
+    
 
     default:    
     $title = THIS_PAGE;    
